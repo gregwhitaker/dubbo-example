@@ -27,6 +27,11 @@ Follow the steps below to run the Dubbo example:
 1. In a new terminal, run the following command to start the provider:
 
         ./gradlew :dubbo-example-provider:run
+        
+    If the provider starts successfully, you will see the following in the terminal:
+    
+        2018-09-21 18:45:32.298  INFO 78749 --- [           main] dubbo.example.provider.Application       : Started Application in 1.433 seconds (JVM running for 1.8)
+        2018-09-21 18:45:32.300  INFO 78749 --- [pool-1-thread-1] .d.c.e.AwaitingNonWebApplicationListener :  [Dubbo] Current Spring Boot Application is await...
 
 ### Starting the Consumer
 

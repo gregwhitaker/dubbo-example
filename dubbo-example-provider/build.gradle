@@ -1,6 +1,9 @@
 plugins {
     id 'java'
+    id 'application'
 }
+
+mainClassName = 'dubbo.example.provider.Application'
 
 dependencies {
     compile project(':dubbo-example-api')
