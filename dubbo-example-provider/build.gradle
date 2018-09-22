@@ -5,5 +5,5 @@ plugins {
 dependencies {
     compile project(':dubbo-example-api')
 
-    compile 'com.alibaba.boot:dubbo-spring-boot-starter:0.2.0'
+    compile "com.alibaba.boot:dubbo-spring-boot-starter:$dubboSpringBootVersion"
 }

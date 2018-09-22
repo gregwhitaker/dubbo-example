@@ -16,6 +16,11 @@ allprojects {
     apply plugin: 'com.github.hierynomus.license'
     apply plugin: 'net.saliman.properties'
 
+    ext {
+        springBomVersion = 'Brussels-SR13'
+        dubboSpringBootVersion = '0.2.0'
+    }
+
     repositories {
         jcenter()
         mavenCentral()

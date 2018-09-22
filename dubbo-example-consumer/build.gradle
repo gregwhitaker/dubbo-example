@@ -1,7 +1,24 @@
 plugins {
     id 'java'
+    id 'application'
+    id 'org.springframework.boot' version '2.0.3.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.6.RELEASE'
 }
+
+mainClassName = 'dubbo.example.consumer.Application'
+sourceCompatibility = 1.8
+
+//dependencyManagement {
+//    imports {
+//        mavenBom "io.spring.platform:platform-bom:${springBomVersion}"
+//    }
+//}
 
 dependencies {
     compile project(':dubbo-example-api')
+
+    compile "com.alibaba.boot:dubbo-spring-boot-starter:$dubboSpringBootVersion"
+    compile "com.alibaba.boot:dubbo-spring-boot-actuator:$dubboSpringBootVersion"
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    compile 'org.springframework.boot:spring-boot-starter-actuator'
 }
