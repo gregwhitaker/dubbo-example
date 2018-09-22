@@ -1,5 +1,7 @@
 # dubbo-example
 
+An example of using [Apache Dubbo](https://dubbo.incubator.apache.org/) for microservice RPC.
+
 ## License
 Copyright 2018 Greg Whitaker
 
