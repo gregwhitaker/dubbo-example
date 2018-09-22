@@ -2,6 +2,10 @@
 
 An example of using [Apache Dubbo](https://dubbo.incubator.apache.org/) for microservice RPC.
 
+## Bugs and Feedback
+
+For bugs, questions, and discussions please use the [Github Issues](https://github.com/gregwhitaker/dubbo-example/issues).
+
 ## License
 Copyright 2018 Greg Whitaker
 
