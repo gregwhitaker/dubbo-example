@@ -8,12 +8,6 @@ plugins {
 mainClassName = 'dubbo.example.consumer.Application'
 sourceCompatibility = 1.8
 
-//dependencyManagement {
-//    imports {
-//        mavenBom "io.spring.platform:platform-bom:${springBomVersion}"
-//    }
-//}
-
 dependencies {
     compile project(':dubbo-example-api')
 
