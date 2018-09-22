@@ -32,6 +32,7 @@ Get a hello message for the specified name.
 
         Hello, World!
 
+<hr>
 
 ### Get Goodbye Message
 Get a generic goodbye message.
