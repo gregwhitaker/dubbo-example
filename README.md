@@ -8,6 +8,7 @@ messages. The Dubbo service is accessed by making an HTTP call to the restful we
 and returns the message created by the Dubbo service.
 
 ## Projects
+The following projects make up this example:
 
 * [dubbo-example-api](dubbo-example-api) - Dubbo service API exposed by the provider
 * [dubbo-example-consumer](dubbo-example-consumer) - Rest service that calls API exposed by the provider
