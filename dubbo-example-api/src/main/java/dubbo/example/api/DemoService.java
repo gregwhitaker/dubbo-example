@@ -15,9 +15,23 @@
  */
 package dubbo.example.api;
 
+/**
+ * Simple service that generates "Hello World" and "Goodbye" messages.
+ */
 public interface DemoService {
 
+    /**
+     * Send a "Hello World" message.
+     *
+     * @param name name of the recipient
+     * @return the message
+     */
     String sayHello(String name);
 
+    /**
+     * Send a "Goodbye" message.
+     *
+     * @return the message
+     */
     String sayGoodbye();
 }
