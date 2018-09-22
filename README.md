@@ -20,12 +20,25 @@ Run the following Gradle command to build this example:
     ./gradlew clean build
     
 ## Running the Example
+Follow the steps below to run the Dubbo example:
 
 ### Starting the Provider
 
+1. In a new terminal, run the following command to start the provider:
+
+        ./gradlew :dubbo-example-provider:run
+
 ### Starting the Consumer
 
+1. In a new terminal, run the following command to start the consumer:
+
+        ./gradlew :dubbo-example-consumer:run
+
 ### Calling the Consumer
+
+1. In a new terminal, run the following command to invoke the `hello` endpoint:
+
+2. Run the following command to invoke the `goodbye` endpoint:
 
 ## Bugs and Feedback
 
