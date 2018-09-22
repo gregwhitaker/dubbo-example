@@ -1,4 +1,5 @@
 # dubbo-example
+[![Build Status](https://travis-ci.org/gregwhitaker/dubbo-example.svg?branch=master)](https://travis-ci.org/gregwhitaker/dubbo-example)
 
 An example of using [Apache Dubbo](https://dubbo.incubator.apache.org/) for microservice RPC.
 
