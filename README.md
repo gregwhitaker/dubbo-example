@@ -38,12 +38,59 @@ Follow the steps below to run the Dubbo example:
 1. In a new terminal, run the following command to start the consumer:
 
         ./gradlew :dubbo-example-consumer:run
+        
+    If the consumer starts successfully, you will see the following in the terminal:
+    
+        2018-09-21 18:48:05.875  INFO 78789 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+        2018-09-21 18:48:05.889  INFO 78789 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+        2018-09-21 18:48:05.891  INFO 78789 --- [           main] dubbo.example.consumer.Application       : Started Application in 3.757 seconds (JVM running for 4.127)
 
 ### Calling the Consumer
 
 1. In a new terminal, run the following command to invoke the `hello` endpoint:
 
+        curl -v http://localhost:8080/hello?name=World
+        
+    If the request was successful, you will receive a `Hello, World!` message:
+    
+        *   Trying ::1...
+        * TCP_NODELAY set
+        * Connected to localhost (::1) port 8080 (#0)
+        > GET /hello?name=World HTTP/1.1
+        > Host: localhost:8080
+        > User-Agent: curl/7.54.0
+        > Accept: */*
+        >
+        < HTTP/1.1 200
+        < Content-Type: text/plain;charset=UTF-8
+        < Content-Length: 13
+        < Date: Sat, 22 Sep 2018 01:49:59 GMT
+        <
+        * Connection #0 to host localhost left intact
+        Hello, World!
+
 2. Run the following command to invoke the `goodbye` endpoint:
+
+    curl -v http://localhost:8080/goodbye
+    
+    If the request was successful, you will receive a `Goodbye!` message:
+
+        *   Trying ::1...
+        * TCP_NODELAY set
+        * Connected to localhost (::1) port 8080 (#0)
+        > GET /goodbye HTTP/1.1
+        > Host: localhost:8080
+        > User-Agent: curl/7.54.0
+        > Accept: */*
+        >
+        < HTTP/1.1 200
+        < Content-Type: text/plain;charset=UTF-8
+        < Content-Length: 8
+        < Date: Sat, 22 Sep 2018 01:51:42 GMT
+        <
+        * Connection #0 to host localhost left intact
+        Goodbye!
+    
 
 ## Bugs and Feedback
 
