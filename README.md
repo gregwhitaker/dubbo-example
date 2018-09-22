@@ -3,7 +3,7 @@
 
 An example of using [Apache Dubbo](https://dubbo.incubator.apache.org/) for microservice RPC.
 
-This example starts both a Dubbo service and a restful web service. The Dubbo service returns `Hello World!` and `Goodbye` 
+This example starts both a Dubbo service and a restful web service. The Dubbo service returns `Hello World!` and `Goodbye!` 
 messages. The Dubbo service is accessed by making an HTTP call to the restful web service, which in turn calls the Dubbo service
 and returns the message created by the Dubbo service.
 
@@ -13,6 +13,19 @@ The following projects make up this example:
 * [dubbo-example-api](dubbo-example-api) - Dubbo service API exposed by the provider
 * [dubbo-example-consumer](dubbo-example-consumer) - Rest service that calls API exposed by the provider
 * [dubbo-example-provider](dubbo-example-provider) - Dubbo service that implements the API
+
+## Building the Example
+Run the following Gradle command to build this example:
+
+    ./gradlew clean build
+    
+## Running the Example
+
+### Starting the Provider
+
+### Starting the Consumer
+
+### Calling the Consumer
 
 ## Bugs and Feedback
 
