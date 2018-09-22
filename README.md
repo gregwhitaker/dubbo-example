@@ -3,6 +3,10 @@
 
 An example of using [Apache Dubbo](https://dubbo.incubator.apache.org/) for microservice RPC.
 
+This example starts both a Dubbo service and a restful web service. The Dubbo service returns `Hello World!` and `Goodbye` 
+messages. The Dubbo service is accessed by making an HTTP call to the restful web service, which in turn calls the Dubbo service
+and returns the message created by the Dubbo service.
+
 ## Projects
 
 * [dubbo-example-api](dubbo-example-api) - Dubbo service API exposed by the provider
