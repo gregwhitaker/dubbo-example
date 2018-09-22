@@ -3,6 +3,12 @@
 
 An example of using [Apache Dubbo](https://dubbo.incubator.apache.org/) for microservice RPC.
 
+## Projects
+
+* [dubbo-example-api](dubbo-example-api) - Dubbo service API exposed by the provider
+* [dubbo-example-consumer](dubbo-example-consumer) - Rest service that calls API exposed by the provider
+* [dubbo-example-provider](dubbo-example-provider) - Dubbo service that implements the API
+
 ## Bugs and Feedback
 
 For bugs, questions, and discussions please use the [Github Issues](https://github.com/gregwhitaker/dubbo-example/issues).
