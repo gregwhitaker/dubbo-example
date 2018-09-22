@@ -30,4 +30,9 @@ public class DefaultDemoService implements DemoService {
     public String sayHello(String name) {
         return String.format("Hello, %s!", name);
     }
+
+    @Override
+    public String sayGoodbye() {
+        return "Goodbye!";
+    }
 }
