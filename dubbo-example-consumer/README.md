@@ -17,7 +17,7 @@ The following restful API is exposed by the consumer:
 ### Get Hello Message
 Get a hello message for the specified name.
 
-## Request
+#### Request
 * HTTP Method: GET
 * URL: http://localhost:8080/hello
 * Query Parameters:
@@ -26,7 +26,7 @@ Get a hello message for the specified name.
     |------|-----------------|-----------|
     | name | hello recipient | true      |
     
-### Success
+#### Success
 * Status: 200 OK
 * Body:
 
@@ -36,11 +36,11 @@ Get a hello message for the specified name.
 ### Get Goodbye Message
 Get a generic goodbye message.
 
-## Request
+#### Request
 * HTTP Method: GET
 * URL: http://localhost:8080/goodbye
     
-### Success
+#### Success
 * Status: 200 OK
 * Body:
 
