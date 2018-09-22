@@ -71,7 +71,7 @@ Follow the steps below to run the Dubbo example:
 
 2. Run the following command to invoke the `goodbye` endpoint:
 
-    curl -v http://localhost:8080/goodbye
+        curl -v http://localhost:8080/goodbye
     
     If the request was successful, you will receive a `Goodbye!` message:
 
